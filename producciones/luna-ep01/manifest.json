@@ -1,0 +1,807 @@
+{
+ "schema_version": "1.0",
+ "created": "2026-11-19T19:30:00",
+ "id": "luna-ep01-frutas-gigantes",
+ "brief": {
+  "prompt": "¡Luna se hizo chiquitita! Episodio 1 «Frutas gigantes» (guion completo del usuario, ver guion.md)",
+  "kind": "story",
+  "length_s": 77,
+  "aspect": "16:9",
+  "fps": 24,
+  "style": "Bright soft 3D animated children's series still, rounded toy-like shapes, saturated candy colours, soft global illumination, gentle warm rim light, clean simple backgrounds",
+  "audio": {
+   "narration": true,
+   "music": true,
+   "sfx": true,
+   "lip_sync": true,
+   "music_file": null,
+   "language": "es"
+  },
+  "captions": "sidecar",
+  "deliverables": [
+   "16:9",
+   "9:16"
+  ],
+  "commercial_use": false,
+  "defaults_used": [
+   "duración 77s (derivada del guion)",
+   "aspecto 16:9 + export 9:16",
+   "fps 24",
+   "estilo 3D infantil brillante",
+   "subtítulos SRT sidecar",
+   "diseño visual de Luna y Hormi (no descrito en el guion)",
+   "commercial_use false (pendiente de confirmar)"
+  ]
+ },
+ "target": {
+  "kind": "other",
+  "url": "",
+  "budget": {
+   "max_gpu_minutes": null,
+   "max_credits": null,
+   "credit_unit": "",
+   "deadline_minutes": null
+  }
+ },
+ "tier": "standard",
+ "tier_reason": "provisional: falta saber GPU/servidor (local, Colab o Comfy Cloud)",
+ "caps": {
+  "still_retries": 2,
+  "still_variants": 1,
+  "video_retries": 1,
+  "continuity_regens": 1,
+  "max_renders": 90,
+  "max_gpu_minutes": null,
+  "pass_mean": 3.5,
+  "pass_min": 3
+ },
+ "gates": {
+  "bible": "human",
+  "plan": "human",
+  "spend": "human",
+  "final": "human"
+ },
+ "stages": {
+  "intake": "done",
+  "preflight": "pending",
+  "bible": "done",
+  "plan": "done",
+  "stills": "pending",
+  "video": "pending",
+  "continuity": "pending",
+  "audio": "pending",
+  "post": "pending",
+  "assembly": "pending",
+  "critique": "pending"
+ },
+ "bible": {
+  "path": "producciones/luna-ep01/biblia.md",
+  "logline": "Luna se encoge al tamaño de una hormiga y, con su amiga Hormi y los niños que miran, adivina qué son las frutas gigantes de la cocina.",
+  "cast": [
+   {
+    "id": "luna",
+    "descriptor": "Luna, a cheerful 6-year-old cartoon girl, round face, light tan skin, big round dark-brown eyes, rosy cheeks, curly dark-brown hair in two puffy pigtails tied with yellow star hair ties, lavender T-shirt with a small white crescent moon, blue denim overall shorts, white sneakers with pink laces",
+    "ref_image": null,
+    "seed": null
+   },
+   {
+    "id": "hormi",
+    "descriptor": "Hormi, a small friendly cartoon ant, glossy cherry-red body in three round segments, big black eyes with white highlights, two curly antennae, six thin dark-red legs, a tiny green leaf worn as a backpack strapped on with a twig",
+    "ref_image": null,
+    "seed": null
+   }
+  ],
+  "style": "Bright soft 3D animated children's series still, rounded toy-like shapes, saturated candy colours, soft global illumination, gentle warm rim light, clean simple backgrounds",
+  "lut": null,
+  "voice": "Luna: niña alegre, español latino neutro, ritmo vivo. Hormi: voz aguda, rápida y cariñosa. Ambas necesitan un clip de referencia de voz (Chatterbox)."
+ },
+ "shots": [
+  {
+   "id": "s01",
+   "beat": "1 cocina",
+   "start_s": 0.0,
+   "duration_s": 4,
+   "type": "establishing",
+   "framing": "medium wide",
+   "camera": "slow push-in",
+   "cast": [
+    "luna"
+   ],
+   "location": "cocina",
+   "narration": null,
+   "sfx": "birds chirping outside, soft kitchen ambience",
+   "chain_from": null,
+   "transition_in": "cut",
+   "still": {
+    "route": "still.klein",
+    "status": "pending",
+    "prompt": "Bright soft 3D animated children's series still, rounded toy-like shapes, saturated candy colours, soft global illumination, gentle warm rim light, clean simple backgrounds. Medium wide shot of Luna, a cheerful 6-year-old cartoon girl, round face, light tan skin, big round dark-brown eyes, rosy cheeks, curly dark-brown hair in two puffy pigtails tied with yellow star hair ties, lavender T-shirt with a small white crescent moon, blue denim overall shorts, white sneakers with pink laces, standing at a sunny pastel kitchen, white wooden table, a bowl with a strawberry, a banana and a bowl of milk, reaching her hand toward the fruit bowl, smiling with curiosity, morning sunlight through the window.",
+    "seed": null
+   },
+   "video": {
+    "route": "video.i2v",
+    "status": "pending",
+    "prompt": "Slow push-in. Luna stretches her arm toward the fruit bowl and wiggles her fingers, smiling.",
+    "seed": null
+   },
+   "extra": [],
+   "status": "pending"
+  },
+  {
+   "id": "s02",
+   "beat": "1 ¡PUF!",
+   "start_s": 4.0,
+   "duration_s": 3,
+   "type": "vfx",
+   "framing": "medium",
+   "camera": "static",
+   "cast": [
+    "luna"
+   ],
+   "location": "cocina",
+   "narration": null,
+   "sfx": "magic poof with sparkle chimes",
+   "chain_from": null,
+   "transition_in": "cut",
+   "still": {
+    "route": "still.klein",
+    "status": "pending",
+    "prompt": "Bright soft 3D animated children's series still, rounded toy-like shapes, saturated candy colours, soft global illumination, gentle warm rim light, clean simple backgrounds. Medium shot of Luna, a cheerful 6-year-old cartoon girl, round face, light tan skin, big round dark-brown eyes, rosy cheeks, curly dark-brown hair in two puffy pigtails tied with yellow star hair ties, lavender T-shirt with a small white crescent moon, blue denim overall shorts, white sneakers with pink laces in a sunny pastel kitchen, white wooden table, a bowl with a strawberry, a banana and a bowl of milk, surrounded by a burst of golden and pink magic sparkles and a soft white poof cloud, eyes wide with surprise.",
+    "seed": null
+   },
+   "video": {
+    "route": "video.i2v",
+    "status": "pending",
+    "prompt": "Static camera. A burst of golden sparkles and a white poof cloud swirls around Luna and she shrinks quickly down toward the table until she disappears into the sparkles.",
+    "seed": null
+   },
+   "extra": [
+    {
+     "route": "vfx.onetake",
+     "status": "pending",
+     "params": {
+      "preset": "particle bloom"
+     }
+    }
+   ],
+   "status": "pending"
+  },
+  {
+   "id": "s03",
+   "beat": "1 chiquitita",
+   "start_s": 7.0,
+   "duration_s": 4,
+   "type": "dialogue",
+   "framing": "close-up",
+   "camera": "static",
+   "cast": [
+    "luna"
+   ],
+   "location": "mesa",
+   "narration": "¡Uy, uy, UY! ¡¡Me hice chiquitita!!",
+   "sfx": null,
+   "chain_from": null,
+   "transition_in": "cut",
+   "still": {
+    "route": "still.klein",
+    "status": "pending",
+    "prompt": "Bright soft 3D animated children's series still, rounded toy-like shapes, saturated candy colours, soft global illumination, gentle warm rim light, clean simple backgrounds. Close-up of Luna, a cheerful 6-year-old cartoon girl, round face, light tan skin, big round dark-brown eyes, rosy cheeks, curly dark-brown hair in two puffy pigtails tied with yellow star hair ties, lavender T-shirt with a small white crescent moon, blue denim overall shorts, white sneakers with pink laces, now ant-sized, standing on the white wooden table top, hands on her cheeks, amazed open-mouth expression, a giant bread crumb and a giant fork blurred behind her, macro-lens tiny-world scale, huge objects around her, creamy shallow depth of field.",
+    "seed": null
+   },
+   "video": {
+    "route": "video.lipsync",
+    "status": "pending",
+    "prompt": "Static camera. Luna looks around amazed and talks to the camera with her hands on her cheeks.",
+    "seed": null
+   },
+   "extra": [],
+   "status": "pending"
+  },
+  {
+   "id": "s04",
+   "beat": "2 Hormi",
+   "start_s": 11.0,
+   "duration_s": 4,
+   "type": "dialogue",
+   "framing": "medium close-up",
+   "camera": "static",
+   "cast": [
+    "hormi"
+   ],
+   "location": "mesa",
+   "narration": "¡Hola! Soy Hormi. ¡Bienvenida al mundo chiquitito!",
+   "sfx": "tiny scuttling footsteps",
+   "chain_from": null,
+   "transition_in": "cut",
+   "still": {
+    "route": "still.klein",
+    "status": "pending",
+    "prompt": "Bright soft 3D animated children's series still, rounded toy-like shapes, saturated candy colours, soft global illumination, gentle warm rim light, clean simple backgrounds. Medium close-up of Hormi, a small friendly cartoon ant, glossy cherry-red body in three round segments, big black eyes with white highlights, two curly antennae, six thin dark-red legs, a tiny green leaf worn as a backpack strapped on with a twig, peeking out from behind a giant golden bread crumb on the white table, waving one leg in greeting, macro-lens tiny-world scale, huge objects around her, creamy shallow depth of field.",
+    "seed": null
+   },
+   "video": {
+    "route": "video.lipsync",
+    "status": "pending",
+    "prompt": "Static camera. Hormi pops out from behind the bread crumb and waves happily while talking.",
+    "seed": null
+   },
+   "extra": [],
+   "status": "pending"
+  },
+  {
+   "id": "s05",
+   "beat": "2 Luna pide ayuda",
+   "start_s": 15.0,
+   "duration_s": 4,
+   "type": "dialogue",
+   "framing": "medium close-up",
+   "camera": "static",
+   "cast": [
+    "luna",
+    "hormi"
+   ],
+   "location": "mesa",
+   "narration": "¡Hola, Hormi! ¿Me ayudas a descubrir qué son estas cosas gigantes?",
+   "sfx": null,
+   "chain_from": null,
+   "transition_in": "cut",
+   "still": {
+    "route": "still.klein",
+    "status": "pending",
+    "prompt": "Bright soft 3D animated children's series still, rounded toy-like shapes, saturated candy colours, soft global illumination, gentle warm rim light, clean simple backgrounds. Medium close-up over Hormi's shoulder of Luna, a cheerful 6-year-old cartoon girl, round face, light tan skin, big round dark-brown eyes, rosy cheeks, curly dark-brown hair in two puffy pigtails tied with yellow star hair ties, lavender T-shirt with a small white crescent moon, blue denim overall shorts, white sneakers with pink laces, ant-sized on the table, pointing up at giant blurred fruit shapes, the back of Hormi, a small friendly cartoon ant, glossy cherry-red body in three round segments, big black eyes with white highlights, two curly antennae, six thin dark-red legs, a tiny green leaf worn as a backpack strapped on with a twig in the foreground, macro-lens tiny-world scale, huge objects around her, creamy shallow depth of field.",
+    "seed": null
+   },
+   "video": {
+    "route": "video.lipsync",
+    "status": "pending",
+    "prompt": "Static camera. Luna points up excitedly at the giant shapes while she asks her question.",
+    "seed": null
+   },
+   "extra": [],
+   "status": "pending"
+  },
+  {
+   "id": "s06",
+   "beat": "2 amiguitos",
+   "start_s": 19.0,
+   "duration_s": 4,
+   "type": "dialogue",
+   "framing": "close-up",
+   "camera": "static",
+   "cast": [
+    "hormi"
+   ],
+   "location": "mesa",
+   "narration": "¡Claro! Y los amiguitos de casa también nos ayudan, ¿verdad?",
+   "sfx": null,
+   "chain_from": null,
+   "transition_in": "cut",
+   "still": {
+    "route": "still.klein",
+    "status": "pending",
+    "prompt": "Bright soft 3D animated children's series still, rounded toy-like shapes, saturated candy colours, soft global illumination, gentle warm rim light, clean simple backgrounds. Close-up of Hormi, a small friendly cartoon ant, glossy cherry-red body in three round segments, big black eyes with white highlights, two curly antennae, six thin dark-red legs, a tiny green leaf worn as a backpack strapped on with a twig on the table, looking straight into the camera with a big friendly smile, antennae curled up happily, macro-lens tiny-world scale, huge objects around her, creamy shallow depth of field.",
+    "seed": null
+   },
+   "video": {
+    "route": "video.lipsync",
+    "status": "pending",
+    "prompt": "Static camera. Hormi nods, then looks straight at the camera and talks to the viewer, antennae bouncing.",
+    "seed": null
+   },
+   "extra": [],
+   "status": "pending"
+  },
+  {
+   "id": "s07",
+   "beat": "2 canción A",
+   "start_s": 23.0,
+   "duration_s": 4,
+   "type": "performance",
+   "framing": "wide",
+   "camera": "slow truck right",
+   "cast": [
+    "luna",
+    "hormi"
+   ],
+   "location": "mesa",
+   "narration": "🎵 Chiquitita, chiquitita, ¿qué será, qué será? 🎵",
+   "sfx": null,
+   "chain_from": null,
+   "transition_in": "cut",
+   "still": {
+    "route": "still.klein",
+    "status": "pending",
+    "prompt": "Bright soft 3D animated children's series still, rounded toy-like shapes, saturated candy colours, soft global illumination, gentle warm rim light, clean simple backgrounds. Wide shot of Luna, a cheerful 6-year-old cartoon girl, round face, light tan skin, big round dark-brown eyes, rosy cheeks, curly dark-brown hair in two puffy pigtails tied with yellow star hair ties, lavender T-shirt with a small white crescent moon, blue denim overall shorts, white sneakers with pink laces and Hormi, a small friendly cartoon ant, glossy cherry-red body in three round segments, big black eyes with white highlights, two curly antennae, six thin dark-red legs, a tiny green leaf worn as a backpack strapped on with a twig hopping side by side across the white table top past a giant salt shaker, joyful, macro-lens tiny-world scale, huge objects around her, creamy shallow depth of field.",
+    "seed": null
+   },
+   "video": {
+    "route": "video.i2v",
+    "status": "pending",
+    "prompt": "Slow truck right following them. Luna and Hormi hop in rhythm side by side, bouncing happily.",
+    "seed": null
+   },
+   "extra": [],
+   "status": "pending"
+  },
+  {
+   "id": "s08",
+   "beat": "2 canción B",
+   "start_s": 27.0,
+   "duration_s": 4,
+   "type": "performance",
+   "framing": "wide",
+   "camera": "slow truck right",
+   "cast": [
+    "luna",
+    "hormi"
+   ],
+   "location": "mesa",
+   "narration": "🎵 ¡Adivina, adivina, y lo vas a encontrar! 🎵",
+   "sfx": null,
+   "chain_from": null,
+   "transition_in": "cut",
+   "still": {
+    "route": "still.klein",
+    "status": "pending",
+    "prompt": "Bright soft 3D animated children's series still, rounded toy-like shapes, saturated candy colours, soft global illumination, gentle warm rim light, clean simple backgrounds. Wide shot of Luna, a cheerful 6-year-old cartoon girl, round face, light tan skin, big round dark-brown eyes, rosy cheeks, curly dark-brown hair in two puffy pigtails tied with yellow star hair ties, lavender T-shirt with a small white crescent moon, blue denim overall shorts, white sneakers with pink laces and Hormi, a small friendly cartoon ant, glossy cherry-red body in three round segments, big black eyes with white highlights, two curly antennae, six thin dark-red legs, a tiny green leaf worn as a backpack strapped on with a twig skipping toward a giant glossy red strawberry rising like a mountain at the edge of the table, macro-lens tiny-world scale, huge objects around her, creamy shallow depth of field.",
+    "seed": null
+   },
+   "video": {
+    "route": "video.i2v",
+    "status": "pending",
+    "prompt": "Slow truck right. Luna and Hormi skip and spin toward the giant red shape, arms up.",
+    "seed": null
+   },
+   "extra": [],
+   "status": "pending"
+  },
+  {
+   "id": "s09",
+   "beat": "3 montaña roja",
+   "start_s": 31.0,
+   "duration_s": 5,
+   "type": "dialogue",
+   "framing": "medium",
+   "camera": "slow tilt up",
+   "cast": [
+    "luna"
+   ],
+   "location": "fresa",
+   "narration": "Es roja… tiene puntitos amarillos… ¡y huele dulce! ¿Qué es esto gigante?",
+   "sfx": "sniff",
+   "chain_from": null,
+   "transition_in": "cut",
+   "still": {
+    "route": "still.klein",
+    "status": "pending",
+    "prompt": "Bright soft 3D animated children's series still, rounded toy-like shapes, saturated candy colours, soft global illumination, gentle warm rim light, clean simple backgrounds. Medium shot of Luna, a cheerful 6-year-old cartoon girl, round face, light tan skin, big round dark-brown eyes, rosy cheeks, curly dark-brown hair in two puffy pigtails tied with yellow star hair ties, lavender T-shirt with a small white crescent moon, blue denim overall shorts, white sneakers with pink laces climbing the glossy red surface of a giant strawberry, holding onto huge yellow seeds like rock-climbing holds, a few green leaves at the top, macro-lens tiny-world scale, huge objects around her, creamy shallow depth of field.",
+    "seed": null
+   },
+   "video": {
+    "route": "video.lipsync",
+    "status": "pending",
+    "prompt": "Slow tilt up. Luna climbs from seed to seed, stops, sniffs the air and looks at the camera curious.",
+    "seed": null
+   },
+   "extra": [],
+   "status": "pending"
+  },
+  {
+   "id": "s10",
+   "beat": "3 ¡FRESA!",
+   "start_s": 36.0,
+   "duration_s": 4,
+   "type": "action",
+   "framing": "wide",
+   "camera": "pull back",
+   "cast": [
+    "luna",
+    "hormi"
+   ],
+   "location": "fresa",
+   "narration": "¡Es una FRESA!",
+   "sfx": "cheerful ding",
+   "chain_from": null,
+   "transition_in": "cut",
+   "still": {
+    "route": "still.klein",
+    "status": "pending",
+    "prompt": "Bright soft 3D animated children's series still, rounded toy-like shapes, saturated candy colours, soft global illumination, gentle warm rim light, clean simple backgrounds. Wide shot revealing a whole giant red strawberry on the table with Luna, a cheerful 6-year-old cartoon girl, round face, light tan skin, big round dark-brown eyes, rosy cheeks, curly dark-brown hair in two puffy pigtails tied with yellow star hair ties, lavender T-shirt with a small white crescent moon, blue denim overall shorts, white sneakers with pink laces sitting proudly on top and Hormi, a small friendly cartoon ant, glossy cherry-red body in three round segments, big black eyes with white highlights, two curly antennae, six thin dark-red legs, a tiny green leaf worn as a backpack strapped on with a twig cheering at its base, macro-lens tiny-world scale, huge objects around her, creamy shallow depth of field.",
+    "seed": null
+   },
+   "video": {
+    "route": "video.i2v",
+    "status": "pending",
+    "prompt": "Camera pulls back to reveal the whole strawberry. Luna throws her arms up and Hormi jumps.",
+    "seed": null
+   },
+   "extra": [],
+   "status": "pending"
+  },
+  {
+   "id": "s11",
+   "beat": "4 lago blanco",
+   "start_s": 40.0,
+   "duration_s": 4,
+   "type": "dialogue",
+   "framing": "medium",
+   "camera": "static",
+   "cast": [
+    "luna",
+    "hormi"
+   ],
+   "location": "leche",
+   "narration": "¡Es blanco, es frío y está en un plato redondo!",
+   "sfx": "gentle liquid lapping",
+   "chain_from": null,
+   "transition_in": "cut",
+   "still": {
+    "route": "still.klein",
+    "status": "pending",
+    "prompt": "Bright soft 3D animated children's series still, rounded toy-like shapes, saturated candy colours, soft global illumination, gentle warm rim light, clean simple backgrounds. Medium shot of Hormi, a small friendly cartoon ant, glossy cherry-red body in three round segments, big black eyes with white highlights, two curly antennae, six thin dark-red legs, a tiny green leaf worn as a backpack strapped on with a twig and Luna, a cheerful 6-year-old cartoon girl, round face, light tan skin, big round dark-brown eyes, rosy cheeks, curly dark-brown hair in two puffy pigtails tied with yellow star hair ties, lavender T-shirt with a small white crescent moon, blue denim overall shorts, white sneakers with pink laces standing on the rim of a round white bowl filled with milk that looks like a white lake, Hormi pointing at it, macro-lens tiny-world scale, huge objects around her, creamy shallow depth of field.",
+    "seed": null
+   },
+   "video": {
+    "route": "video.lipsync",
+    "status": "pending",
+    "prompt": "Static camera. Hormi points at the white lake and talks; the milk surface ripples gently.",
+    "seed": null
+   },
+   "extra": [],
+   "status": "pending"
+  },
+  {
+   "id": "s12",
+   "beat": "4 ¿qué será?",
+   "start_s": 44.0,
+   "duration_s": 3,
+   "type": "dialogue",
+   "framing": "close-up",
+   "camera": "static",
+   "cast": [
+    "luna"
+   ],
+   "location": "leche",
+   "narration": "¿Qué será, amiguitos?",
+   "sfx": null,
+   "chain_from": null,
+   "transition_in": "cut",
+   "still": {
+    "route": "still.klein",
+    "status": "pending",
+    "prompt": "Bright soft 3D animated children's series still, rounded toy-like shapes, saturated candy colours, soft global illumination, gentle warm rim light, clean simple backgrounds. Close-up of Luna, a cheerful 6-year-old cartoon girl, round face, light tan skin, big round dark-brown eyes, rosy cheeks, curly dark-brown hair in two puffy pigtails tied with yellow star hair ties, lavender T-shirt with a small white crescent moon, blue denim overall shorts, white sneakers with pink laces on the rim of the milk bowl, a finger on her chin, looking into the camera with a playful thinking face, macro-lens tiny-world scale, huge objects around her, creamy shallow depth of field.",
+    "seed": null
+   },
+   "video": {
+    "route": "video.lipsync",
+    "status": "pending",
+    "prompt": "Static camera. Luna taps her chin and asks the viewer, raising her eyebrows.",
+    "seed": null
+   },
+   "extra": [],
+   "status": "pending"
+  },
+  {
+   "id": "s13",
+   "beat": "4 ¡LECHE!",
+   "start_s": 47.0,
+   "duration_s": 5,
+   "type": "action",
+   "framing": "medium wide",
+   "camera": "static",
+   "cast": [
+    "luna",
+    "hormi"
+   ],
+   "location": "leche",
+   "narration": "¡Es LECHE! ¡A nadar!",
+   "sfx": "big cartoon splash",
+   "chain_from": null,
+   "transition_in": "cut",
+   "still": {
+    "route": "still.klein",
+    "status": "pending",
+    "prompt": "Bright soft 3D animated children's series still, rounded toy-like shapes, saturated candy colours, soft global illumination, gentle warm rim light, clean simple backgrounds. Medium wide shot of Luna, a cheerful 6-year-old cartoon girl, round face, light tan skin, big round dark-brown eyes, rosy cheeks, curly dark-brown hair in two puffy pigtails tied with yellow star hair ties, lavender T-shirt with a small white crescent moon, blue denim overall shorts, white sneakers with pink laces and Hormi, a small friendly cartoon ant, glossy cherry-red body in three round segments, big black eyes with white highlights, two curly antennae, six thin dark-red legs, a tiny green leaf worn as a backpack strapped on with a twig jumping off the rim of a bowl of milk, mid-air above the white surface, joyful, macro-lens tiny-world scale, huge objects around her, creamy shallow depth of field.",
+    "seed": null
+   },
+   "video": {
+    "route": "video.i2v",
+    "status": "pending",
+    "prompt": "Static camera. Luna and Hormi jump into the milk with a big round white splash, then pop up laughing and floating.",
+    "seed": null
+   },
+   "extra": [],
+   "status": "pending"
+  },
+  {
+   "id": "s14",
+   "beat": "5 torre amarilla",
+   "start_s": 52.0,
+   "duration_s": 4,
+   "type": "dialogue",
+   "framing": "medium",
+   "camera": "slight handheld wobble",
+   "cast": [
+    "luna"
+   ],
+   "location": "platano",
+   "narration": "¡Wooo! ¡Esta torre amarilla se mueve! ¿Qué es?",
+   "sfx": "wobbly creak",
+   "chain_from": null,
+   "transition_in": "cut",
+   "still": {
+    "route": "still.klein",
+    "status": "pending",
+    "prompt": "Bright soft 3D animated children's series still, rounded toy-like shapes, saturated candy colours, soft global illumination, gentle warm rim light, clean simple backgrounds. Medium shot of Luna, a cheerful 6-year-old cartoon girl, round face, light tan skin, big round dark-brown eyes, rosy cheeks, curly dark-brown hair in two puffy pigtails tied with yellow star hair ties, lavender T-shirt with a small white crescent moon, blue denim overall shorts, white sneakers with pink laces balancing on top of a giant curved yellow banana standing like a tower on the table, arms out for balance, macro-lens tiny-world scale, huge objects around her, creamy shallow depth of field.",
+    "seed": null
+   },
+   "video": {
+    "route": "video.lipsync",
+    "status": "pending",
+    "prompt": "The banana tower sways side to side; Luna wobbles, arms out, laughing and talking.",
+    "seed": null
+   },
+   "extra": [],
+   "status": "pending"
+  },
+  {
+   "id": "s15",
+   "beat": "5 ¡PLÁTANO!",
+   "start_s": 56.0,
+   "duration_s": 5,
+   "type": "action",
+   "framing": "wide",
+   "camera": "pan following",
+   "cast": [
+    "luna",
+    "hormi"
+   ],
+   "location": "platano",
+   "narration": "¡Es un PLÁTANO!",
+   "sfx": "slide whoosh, giggles",
+   "chain_from": null,
+   "transition_in": "cut",
+   "still": {
+    "route": "still.klein",
+    "status": "pending",
+    "prompt": "Bright soft 3D animated children's series still, rounded toy-like shapes, saturated candy colours, soft global illumination, gentle warm rim light, clean simple backgrounds. Wide shot of Luna, a cheerful 6-year-old cartoon girl, round face, light tan skin, big round dark-brown eyes, rosy cheeks, curly dark-brown hair in two puffy pigtails tied with yellow star hair ties, lavender T-shirt with a small white crescent moon, blue denim overall shorts, white sneakers with pink laces sliding down the curved yellow peel of a giant banana like a playground slide, laughing, Hormi, a small friendly cartoon ant, glossy cherry-red body in three round segments, big black eyes with white highlights, two curly antennae, six thin dark-red legs, a tiny green leaf worn as a backpack strapped on with a twig cheering at the bottom, macro-lens tiny-world scale, huge objects around her, creamy shallow depth of field.",
+    "seed": null
+   },
+   "video": {
+    "route": "video.i2v",
+    "status": "pending",
+    "prompt": "Camera pans with her. Luna slides down the curved banana from top to bottom and lands laughing next to Hormi.",
+    "seed": null
+   },
+   "extra": [],
+   "status": "pending"
+  },
+  {
+   "id": "s16",
+   "beat": "6 vuelve",
+   "start_s": 61.0,
+   "duration_s": 3,
+   "type": "vfx",
+   "framing": "medium",
+   "camera": "static",
+   "cast": [
+    "luna"
+   ],
+   "location": "cocina",
+   "narration": null,
+   "sfx": "magic poof reversed with sparkle chimes",
+   "chain_from": null,
+   "transition_in": "cut",
+   "still": {
+    "route": "still.klein",
+    "status": "pending",
+    "prompt": "Bright soft 3D animated children's series still, rounded toy-like shapes, saturated candy colours, soft global illumination, gentle warm rim light, clean simple backgrounds. Medium shot of Luna, a cheerful 6-year-old cartoon girl, round face, light tan skin, big round dark-brown eyes, rosy cheeks, curly dark-brown hair in two puffy pigtails tied with yellow star hair ties, lavender T-shirt with a small white crescent moon, blue denim overall shorts, white sneakers with pink laces at normal size standing at a sunny pastel kitchen, white wooden table, a bowl with a strawberry, a banana and a bowl of milk, holding a strawberry in her hand, golden and pink sparkles fading around her, delighted smile.",
+    "seed": null
+   },
+   "video": {
+    "route": "video.i2v_se",
+    "status": "pending",
+    "prompt": "Static camera. Golden sparkles burst on the table and Luna grows back to normal size, holding the strawberry.",
+    "seed": null
+   },
+   "extra": [
+    {
+     "route": "vfx.onetake",
+     "status": "pending",
+     "params": {
+      "preset": "particle bloom"
+     }
+    }
+   ],
+   "status": "pending"
+  },
+  {
+   "id": "s17",
+   "beat": "6 gracias",
+   "start_s": 64.0,
+   "duration_s": 4,
+   "type": "dialogue",
+   "framing": "medium close-up",
+   "camera": "static",
+   "cast": [
+    "luna"
+   ],
+   "location": "cocina",
+   "narration": "¡Gracias, Hormi! ¡Y gracias a ti por adivinar!",
+   "sfx": null,
+   "chain_from": null,
+   "transition_in": "cut",
+   "still": {
+    "route": "still.klein",
+    "status": "pending",
+    "prompt": "Bright soft 3D animated children's series still, rounded toy-like shapes, saturated candy colours, soft global illumination, gentle warm rim light, clean simple backgrounds. Medium close-up of Luna, a cheerful 6-year-old cartoon girl, round face, light tan skin, big round dark-brown eyes, rosy cheeks, curly dark-brown hair in two puffy pigtails tied with yellow star hair ties, lavender T-shirt with a small white crescent moon, blue denim overall shorts, white sneakers with pink laces at normal size in a sunny pastel kitchen, white wooden table, a bowl with a strawberry, a banana and a bowl of milk, holding a strawberry, smiling warmly at the camera.",
+    "seed": null
+   },
+   "video": {
+    "route": "video.lipsync",
+    "status": "pending",
+    "prompt": "Static camera. Luna looks down at the table, then at the camera, and thanks the viewer.",
+    "seed": null
+   },
+   "extra": [],
+   "status": "pending"
+  },
+  {
+   "id": "s18",
+   "beat": "6 psst",
+   "start_s": 68.0,
+   "duration_s": 3,
+   "type": "dialogue",
+   "framing": "close-up",
+   "camera": "slow push-in",
+   "cast": [
+    "hormi"
+   ],
+   "location": "mesa",
+   "narration": "Psst… mañana vamos al… ¡baño!",
+   "sfx": "tiny whisper",
+   "chain_from": null,
+   "transition_in": "cut",
+   "still": {
+    "route": "still.klein",
+    "status": "pending",
+    "prompt": "Bright soft 3D animated children's series still, rounded toy-like shapes, saturated candy colours, soft global illumination, gentle warm rim light, clean simple backgrounds. Close-up of Hormi, a small friendly cartoon ant, glossy cherry-red body in three round segments, big black eyes with white highlights, two curly antennae, six thin dark-red legs, a tiny green leaf worn as a backpack strapped on with a twig on the white table holding one leg up to its mouth as if whispering a secret to the camera, macro-lens tiny-world scale, huge objects around her, creamy shallow depth of field.",
+    "seed": null
+   },
+   "video": {
+    "route": "video.lipsync",
+    "status": "pending",
+    "prompt": "Slow push-in. Hormi leans toward the camera and whispers, then winks.",
+    "seed": null
+   },
+   "extra": [],
+   "status": "pending"
+  },
+  {
+   "id": "s19",
+   "beat": "6 despedida",
+   "start_s": 71.0,
+   "duration_s": 6,
+   "type": "dialogue",
+   "framing": "medium",
+   "camera": "static",
+   "cast": [
+    "luna",
+    "hormi"
+   ],
+   "location": "cocina",
+   "narration": "¿Adónde quieres que vaya chiquitita? ¡Escríbelo en los comentarios! ¡Chao, chao, amiguitos!",
+   "sfx": null,
+   "chain_from": null,
+   "transition_in": "xfade",
+   "still": {
+    "route": "still.klein",
+    "status": "pending",
+    "prompt": "Bright soft 3D animated children's series still, rounded toy-like shapes, saturated candy colours, soft global illumination, gentle warm rim light, clean simple backgrounds. Medium shot of Luna, a cheerful 6-year-old cartoon girl, round face, light tan skin, big round dark-brown eyes, rosy cheeks, curly dark-brown hair in two puffy pigtails tied with yellow star hair ties, lavender T-shirt with a small white crescent moon, blue denim overall shorts, white sneakers with pink laces in a sunny pastel kitchen, white wooden table, a bowl with a strawberry, a banana and a bowl of milk waving goodbye at the camera, Hormi, a small friendly cartoon ant, glossy cherry-red body in three round segments, big black eyes with white highlights, two curly antennae, six thin dark-red legs, a tiny green leaf worn as a backpack strapped on with a twig small on the table beside her also waving.",
+    "seed": null
+   },
+   "video": {
+    "route": "video.lipsync",
+    "status": "pending",
+    "prompt": "Static camera. Luna talks to the camera then waves goodbye with both hands; Hormi waves too.",
+    "seed": null
+   },
+   "extra": [],
+   "status": "pending"
+  }
+ ],
+ "audio": {
+  "voiceover": {
+   "route": "audio.voice",
+   "status": "pending",
+   "params": {
+    "language": "es",
+    "speakers": {
+     "luna": "ref_luna.wav",
+     "hormi": "ref_hormi.wav"
+    }
+   },
+   "seed": 7
+  },
+  "music": {
+   "route": "audio.music",
+   "status": "pending",
+   "params": {
+    "tags": "children's song, ukulele, glockenspiel, hand claps, bouncy, 120 bpm, happy, playful, kids choir, Spanish",
+    "lyrics": "[intro]\n[instrumental]\n[chorus]\nChiquitita, chiquitita, ¿qué será, qué será?\n¡Adivina, adivina, y lo vas a encontrar!\n[outro]\n[instrumental]",
+    "seconds": 79
+   }
+  },
+  "sfx": [
+   {
+    "route": "audio.sfx",
+    "status": "pending",
+    "params": {
+     "prompt": "magic poof with bright sparkle chimes, cartoon",
+     "seconds": 3
+    }
+   },
+   {
+    "route": "audio.sfx",
+    "status": "pending",
+    "params": {
+     "prompt": "cartoon countdown ticks 3 2 1 then a cheerful ding",
+     "seconds": 3
+    }
+   },
+   {
+    "route": "audio.sfx",
+    "status": "pending",
+    "params": {
+     "prompt": "big cartoon splash into liquid, bubbly",
+     "seconds": 3
+    }
+   },
+   {
+    "route": "audio.sfx",
+    "status": "pending",
+    "params": {
+     "prompt": "cartoon slide whoosh with giggles",
+     "seconds": 3
+    }
+   }
+  ]
+ },
+ "post": [
+  {
+   "route": "post.captions",
+   "status": "pending",
+   "params": {
+    "source": "narration",
+    "mode": "sidecar"
+   }
+  }
+ ],
+ "assembly": {
+  "status": "pending",
+  "xfade": 0.3,
+  "beats_file": null,
+  "captions": "sidecar",
+  "exports": [
+   {
+    "aspect": "16:9",
+    "method": "crop",
+    "file": null
+   },
+   {
+    "aspect": "9:16",
+    "method": "reframe",
+    "file": null
+   }
+  ],
+  "output": null
+ },
+ "cost": {
+  "renders": 0,
+  "estimate_gpu_minutes": null,
+  "actual_gpu_minutes": 0,
+  "rates_s_per_render": {},
+  "rates_note": "tasas por defecto no verificadas"
+ },
+ "log": []
+}
